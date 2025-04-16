@@ -1,0 +1,18 @@
+---
+export interface Props {
+    title: string;
+    description: string;
+    btn?: string;
+}
+const { title, description, btn } = Astro.props;
+---
+
+<div class="bg-green-400 p-5 rounded-lg flex flex-col mb-4 hover:bg-gray-100 transition duration-500 group">
+    <h2 class="text-white text-2xl group-hover:text-green-400">{title}</h2>
+    <p class="text-white group-hover:text-green-400">{description}</p>
+    {btn && (
+        <a href="#" class="bg-white text-green-400 p-2 rounded mt-4 group-hover:bg-green-400 group-hover:text-white transition duration-500">
+            View More
+        </a>
+    )}
+</div>

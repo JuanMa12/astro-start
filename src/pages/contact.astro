@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+    <section>
+        <h1 class="text-green-400 text-xl font-bold">Contact</h1>
+        <p class="mb-4">If you have any questions, feel free to reach out!</p>
+        <form action="/submit" method="POST" class="bg-gray-100 p-5 rounded-lg flex flex-col">
+            <label class="mb-2" for="name">Name:</label>
+            <input class="bg-white p-2 rounded" type="text" id="name" name="name" required />
+            <br />
+            <label class="mb-2" for="email">Email:</label>
+            <input class="bg-white p-2 rounded" type="email" id="email" name="email" required />
+            <br />
+            <label class="mb-2" for="message">Message:</label>
+            <textarea class="bg-white" id="message" name="message" required></textarea>
+            <br />
+            <button class="bg-green-400 hover:bg-green-700 p-2 text-white" type="submit">Send</button>
+        </form>
+    </section>
+</Layout>
