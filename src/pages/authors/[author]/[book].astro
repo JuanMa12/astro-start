@@ -1,0 +1,10 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from '@layouts/Layout.astro';
+
+const { author, book } = Astro.params;
+---
+
+<Layout title="Article">
+    <p>The book <b>{book}</b> is of author: <b>{author}</b></p>
+</Layout>

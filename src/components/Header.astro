@@ -1,0 +1,10 @@
+---
+const { pathname } = new URL(Astro.request.url);
+---
+
+<div class="bg-gray-200 p-2">
+  <a class={`p-2 hover:bg-green-400 hover:text-white ${pathname == '/posts/' ? 'bg-green-400 text-white' : ''}`} href="/posts/">HOME</a>
+  <a class={`p-2 hover:bg-green-400 hover:text-white ${pathname == '/posts/content/js/' ? 'bg-green-400 text-white' : ''}`} href="/posts/content/js/">JAVASCRIPT</a>
+  <a class={`p-2 hover:bg-green-400 hover:text-white ${pathname == '/posts/content/html/' ? 'bg-green-400 text-white' : ''}`} href="/posts/content/html/">HTML</a>
+  <a class={`p-2 hover:bg-green-400 hover:text-white ${pathname == '/posts/content/css/' ? 'bg-green-400 text-white' : ''}`} href="/posts/content/css/">CSS</a>
+</div>

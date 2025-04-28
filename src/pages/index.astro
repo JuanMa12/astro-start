@@ -1,12 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';	
+import Layout from '@layouts/Layout.astro';
+import Card from '@components/Card.astro';	
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
+<Layout title="Home">
 	<section>
 		<h1 class="text-green-400 text-xl font-bold">Home</h1>
 		<p class="mb-4">Home page</p>
@@ -21,7 +21,9 @@ import Card from '../components/Card.astro';
 		<div class="grid grid-cols-3 gap-10 mt-4">
 			<Card title="Card 1" description="This is the first card." btn="true" />
 			<Card title="Card 2" description="This is the second card." />
-			<Card title="Card 3" description="This is the third card." btn="true" />
+			<Card title="Card 3" description="This is the third card." btn="true">
+				<p class="text-white group-hover:text-green-400">This is a child slot content.</p>
+			</Card>
 		</div>
 	</section>
 </Layout>
