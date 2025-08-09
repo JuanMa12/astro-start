@@ -1,0 +1,10 @@
+---
+import Layout from "@layouts/LayoutMovies.astro";
+import Movies from "@components/movies/Movies.astro";
+import Search from "@components/movies/Search.jsx";
+---
+
+<Layout>
+  <Search client:load />
+  <Movies />
+</Layout>
