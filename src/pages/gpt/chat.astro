@@ -1,0 +1,10 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Chat from "@components/gpt/Chat.svelte";
+---
+
+<Layout title="chatbot">
+  <div class="mt-4">
+    <Chat client:load />
+  </div>
+</Layout>

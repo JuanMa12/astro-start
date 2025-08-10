@@ -1,0 +1,11 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Dalle from "@components/gpt/Dalle.svelte";
+---
+
+<Layout title="Image">
+  <div class="mt-4">
+    <a href="/gpt/chat">Chat</a>
+    <Dalle client:load />
+  </div>
+</Layout>

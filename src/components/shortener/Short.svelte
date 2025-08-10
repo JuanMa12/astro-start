@@ -19,9 +19,9 @@
       headers :{
         accept: 'application/json',
         'content-type':'application/json',
-        Authorization: 'sk_DNXOqmiAw622fXOb'
+        Authorization: 'APIKEY'
       },
-      body: JSON.stringify({originalURL: url, domain: 'jmdev.short.gy' })
+      body: JSON.stringify({originalURL: url, domain: 'DOMAIN.short.gy' })
     };
     const response = await fetch('https://api.short.io/links', options);
     const data = await response.json();

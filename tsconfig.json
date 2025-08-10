@@ -32,7 +32,7 @@
         "./src/utils/*"
       ]
     },
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "jsxImportSource": "react"
   }
 }
